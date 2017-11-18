@@ -162,6 +162,11 @@ a:hover {
 	color: #000000;
 }
 
+
+header a {
+	text-decoration: none;
+}
+
 #top-bar, .content-area {
 	width: 960px;
 }
@@ -343,3 +348,11 @@ form input, form textarea {
 
 }
 
+.img-portfolio {
+	width: 200px;
+}
+
+td {
+	margin: 0 20px 0 20px;
+
+}
