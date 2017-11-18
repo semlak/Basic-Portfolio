@@ -1,0 +1,256 @@
+
+
+
+
+/*basic settings, taken largely from https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css
+
+html {
+	display: block;
+}
+
+/*  set display:none for elements inside the head element */
+head, link, meta, script, style, title {
+	display: none;
+}
+
+
+body {
+	display: block;
+	margin: 8px;
+}
+
+figcaption {
+	display: block;
+}
+
+div {
+    display: block
+}
+
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block
+}
+
+
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px
+}
+
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+	color: #ffffff;
+
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    color: #129793
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    color: #129793;
+}
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+    color: #129793;
+}
+h5 {
+    display: block;
+    font-size: .83em;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold
+}
+h6 {
+    display: block;
+    font-size: .67em;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold
+}
+
+
+
+
+
+
+/*site specific settings*/
+
+.content-background {
+	/* background image from https://www.toptal.com/designers/subtlepatterns/*/
+	clear: both;
+	background-color: rgb(0,0,0);
+	background-image: url("../images/dust_scratches.png");
+
+
+}
+
+body {
+	/* background image from https://www.toptal.com/designers/subtlepatterns/*/
+	background-color: rgb(0,0,0);
+	background-image: url("../images/dust_scratches.png");
+}
+
+header {
+	/* this is my blue-green color*/
+	background: #129793;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+a:link,a:visited {
+	/*dark gray for unvisited and visited links*/
+	color: #696969;
+}
+
+a:hover {
+	/*black for links that are currently hovered*/
+	color: #000000;
+}
+
+#top-bar, .content-area {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#top-bar {
+	/*not working*/
+	background: #ffffff;
+}
+
+/*.content-area, .primary-content, .sidebar, h1, section {
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+.primary-content, .sidebar {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 40px 40px 40px;
+	box-sizing: border-box;
+}
+
+
+
+header, nav, .nav-div {
+	float: left;
+}
+
+
+nav {
+	width: 270px;
+}
+
+
+.nav-div {
+	width: 30%;
+}
+
+.main-body {
+	clear: both;
+	margin-top: 30px;
+
+}
+
+
+.primary-content {
+	width: 650px;
+	background: #fff;
+	/*float: left;*/
+	float: left;
+}
+
+.sidebar {
+	width: 270px;
+	background: #fff;
+	float: right;
+}
+
+
+.img-profile {
+	width: 200px;
+}
+
+
+.img-social {
+	width: 50px;
+}
+
+
+footer {
+	clear: both;
+	display: block;
+		box-sizing: border-box;
+
+
+}
+
+footer hr {
+	height: 10px;
+	background: #129793;
+	padding-bottom: -20px;
+	margin: 0 0 0 0;
+}
+
+footer div {
+	background: #585858;
+	line-height: 4;
+	margin: 0;
+
+}
+
+footer div div {
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+
+
