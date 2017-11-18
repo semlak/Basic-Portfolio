@@ -14,11 +14,6 @@ head, link, meta, script, style, title {
 }
 
 
-body {
-	display: block;
-	margin: 8px;
-}
-
 figcaption {
 	display: block;
 }
@@ -74,7 +69,8 @@ h2 {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     font-weight: bold;
-    color: #129793
+	/* this is my blue-green color*/
+    color: #009999;
 }
 
 h3 {
@@ -85,7 +81,8 @@ h3 {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     font-weight: bold;
-    color: #129793;
+	/* this is my blue-green color*/
+    color: #009999;;
 }
 h4 {
     display: block;
@@ -94,7 +91,7 @@ h4 {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     font-weight: bold;
-    color: #129793;
+    color: #009999;;
 }
 h5 {
     display: block;
@@ -131,6 +128,16 @@ h6 {
 
 }
 
+
+html, body {
+	/*display: block;*/
+	/*margin: 8px;*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
 body {
 	/* background image from https://www.toptal.com/designers/subtlepatterns/*/
 	background-color: rgb(0,0,0);
@@ -139,7 +146,7 @@ body {
 
 header {
 	/* this is my blue-green color*/
-	background: #129793;
+	background: #009999;;
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -157,13 +164,37 @@ a:hover {
 
 #top-bar, .content-area {
 	width: 960px;
-	margin: 0 auto;
 }
 
+
+#container {
+	min-height: 100%;
+	/*height: 100%;*/
+	position: relative;
+
+}
+
+.content-area {
+	clear: both;
+	padding-top: 40px;
+	margin: 0 auto 40px auto;
+
+	/*this is the height of the footer*/
+	margin-bottom: 90px;
+}
+
+
+/*.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+}*/
 
 #top-bar {
 	/*not working*/
 	background: #ffffff;
+
+	margin: 0 auto;
 }
 
 /*.content-area, .primary-content, .sidebar, h1, section {
@@ -181,6 +212,14 @@ a:hover {
 
 
 
+
+.main-body hr {
+	height: 1px;
+	background: #D3D3D3;
+	border: none;
+
+}
+
 header, nav, .nav-div {
 	float: left;
 }
@@ -188,30 +227,37 @@ header, nav, .nav-div {
 
 nav {
 	width: 270px;
+	margin-left: 355px;
+	/*margin-bottom: ;*/
+	/*padding: ;*/
+	height: 100px;
 }
 
 
 .nav-div {
-	width: 30%;
+	/*width: 20%;*/
+	margin: 40px 10px 40px 10px;
+	box-sizing: border-box;
 }
 
 .main-body {
 	clear: both;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 
 }
 
 
 .primary-content {
 	width: 650px;
-	background: #fff;
+	background: #ffffff;
 	/*float: left;*/
 	float: left;
+	margin-bottom: 40px;
 }
 
 .sidebar {
 	width: 270px;
-	background: #fff;
+	background: #ffffff;
 	float: right;
 }
 
@@ -226,19 +272,34 @@ nav {
 }
 
 
+.push {
+	height: 90px;
+}
+
 footer {
 	clear: both;
 	display: block;
-		box-sizing: border-box;
+	box-sizing: border-box;
+	height: 90px;
+	width: 100%;
+
+	/* footer position help at http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+		and https://css-tricks.com/couple-takes-sticky-footer/
+	*/
+/*	position: absolute;
+	bottom: 0;
+*/
+
 
 
 }
 
 footer hr {
 	height: 10px;
-	background: #129793;
-	padding-bottom: -20px;
+	/* this is my blue-green color*/
+	background: #009999;;
 	margin: 0 0 0 0;
+	border: none;
 }
 
 footer div {
@@ -253,4 +314,32 @@ footer div div {
 	text-align: center;
 }
 
+
+
+/*   css for contact.html*/
+
+
+input[type="submit"] {
+	/* this is my blue-green color*/
+    background: #009999;;
+    color: white;
+    padding: .5em 1em .5em 1em;
+}
+
+
+input[type="submit"]:hover {
+	/* this is my blue-green color*/
+    background: #4cb7b7;
+    color: white;
+    padding: .5em 1em .5em 1em;
+}
+
+
+form input, form textarea {
+	margin: 1em 0 1em 0;
+	padding: .4em;
+	border: 1px solid #A9A9A9;
+	/*border-radius: 6px;*/
+
+}
 
